@@ -2,11 +2,14 @@
 
 const calculateChange = (input) => {
   // Add your code here
-  if (input === 0) {
+  if (input <= 0) {
     return `$${input} ==> No change needed`;
   }
   if (input > 10) {
     return `Error: the number is too large`;
+  }
+  if (isNaN(input)) {
+    return `Error: Please enter a dollar amount`;
   }
 
   const COINS = [100, 25, 10, 5, 1];
@@ -41,3 +44,4 @@ console.log(calculateChange(0.16));
 //$0.16 ==> 1 dime, 1 nickel, 1 penny
 console.log(calculateChange(15.11));
 // $15.11 ==> Error: the number is too large
+console.log(calculateChange(1.2));

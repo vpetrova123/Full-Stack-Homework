@@ -4,10 +4,12 @@
 document.querySelector("form").addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
-  let username = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let message = document.getElementById("message").value;
-  let checkbox = document.getElementById("newsletter").checked;
+  event.preventDefault();
+  const username = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+  const checkbox = document.getElementById("newsletter").checked;
+
   console.log(`Name: ${username}`);
   console.log(`Email: ${email}`);
   if (message === "") {
