@@ -14,6 +14,28 @@
   <body class="bg-dark">
     <form class="bg-light border rounded w-50 mx-auto mt-5 p-3">
       <h1 class="mt-2 mb-4">Contact Form</h1>
+      <div class="form-group my-3">
+        <label for="name">Name*</label>
+        <input type="text" class="form-control mt-2" id="name" required />
+      </div>
+      <div class="form-group my-3">
+        <label for="email">Email*</label>
+        <input type="email" class="form-control mt-2" id="email" required />
+      </div>
+      <div class="form-group my-3">
+        <label for="message" class="form-label">Submit your message:</label>
+        <textarea class="form-control mt-2" id="message" rows="4"></textarea>
+      </div>
+      <div class="form-check my-3">
+        <label for="newsletter" class="form-check-label"
+          >Sign up for the newsletter</label
+        >
+        <input type="checkbox" class="form-check-input" id="newsletter" />
+      </div>
+      <div class="form-group d-flex gap-1 my-3">
+        <input type="submit" class="btn btn-primary w-50" value="Submit" />
+        <input type="reset" class="btn btn-secondary w-50" value="Reset" />
+      </div>
     </form>
   </body>
 </html>
