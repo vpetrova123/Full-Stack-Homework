@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>03 - Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-dark">
+    <form method="post" class="bg-light border rounded w-50 mx-auto mt-5 p-3">
+      <h1 class="mt-2 mb-4">Contact Form</h1>
+      <div class="form-group my-3">
+        <label for="username">Userame</label>
+        <input
+          type="text"
+          class="form-control mt-2"
+          name="username"
+          id="username"
+        />
+      </div>
+      <div class="form-group my-3">
+        <label for="email">Email</label>
+        <input type="text" class="form-control mt-2" name="email" id="email" />
+      </div>
+      <div class="form-group my-3">
+        <label for="comments" class="form-label">Comments:</label>
+        <textarea
+          class="form-control mt-2"
+          name="comments"
+          id="comments"
+          rows="4"
+        ></textarea>
+      </div>
+      <div class="form-check my-3">
+        <label for="newsletter" class="form-check-label"
+          >Sign up for the newsletter</label
+        >
+        <input
+          type="radio"
+          class="form-check-input"
+          name="newsletter"
+          id="newsletter"
+        />
+      </div>
+      <div class="form-group d-flex gap-1 my-3">
+        <input type="submit" class="btn btn-primary w-50" value="Submit" />
+        <input type="reset" class="btn btn-secondary w-50" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>
